@@ -29,7 +29,6 @@
           </div>
      </section>
 
-
      <!-- team -->
      <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
           <div class="container">
@@ -50,9 +49,9 @@
                     <ul class="nav navbar-nav navbar-nav-first">
                          <li><a id="navhome" href="#home" class="smoothScroll"></a></li>
                          <li><a id="navabout" href="#about" class="smoothScroll"></a></li>
-                         <li><a id="navstory" href="#problems" class="smoothScroll"></a></li>
-                         <li><a id="navwork" href="#menu" class="smoothScroll"></a></li>
-                         <li><a id="navteam" href="#testimonial" class="smoothScroll"></a></li>
+                         <li><a id="navstory" href="#story" class="smoothScroll"></a></li>
+                         <li><a id="navwork" href="#work" class="smoothScroll"></a></li>
+                         <li><a id="navteam" href="#team" class="smoothScroll"></a></li>
                          <li><a id="navcontact" href="#contact" class="smoothScroll"></a></li>
                          <li><a href="#" onclick="setLanguage('sk')">sk</a></li>
                          <li><a href="#" onclick="setLanguage('en')">en</a></li>
@@ -78,10 +77,8 @@
                          <div class="caption">
                               <div class="container">
                                    <div class="col-md-8 col-sm-12">
-                                        <h3 id="slider1up"></h3>
                                         <h1 id="slider1down"></h1>
-                                        <a href="#problems" class="section-btn btn btn-default smoothScroll">What's
-                                             wrong</a>
+                                        <a id="btn1" href="#about" class="section-btn btn btn-default smoothScroll"></a>
                                    </div>
                               </div>
                          </div>
@@ -91,10 +88,8 @@
                          <div class="caption">
                               <div class="container">
                                    <div class="col-md-8 col-sm-12">
-                                        <h3 id="slider2up"></h3>
                                         <h1 id="slider2down"></h1>
-                                        <a href="#team" class="section-btn btn btn-default smoothScroll">Discover our
-                                             work</a>
+                                        <a id="btn2" href="#story" class="section-btn btn btn-default smoothScroll"></a>
                                    </div>
                               </div>
                          </div>
@@ -104,10 +99,8 @@
                          <div class="caption">
                               <div class="container">
                                    <div class="col-md-8 col-sm-12">
-                                        <h3 id="slider3up"></h3>
                                         <h1 id="slider3down"></h1>
-                                        <a href="#contact" class="section-btn btn btn-default smoothScroll">Hit us
-                                             up</a>
+                                        <a id="btn3" href="#work" class="section-btn btn btn-default smoothScroll"></a>
                                    </div>
                               </div>
                          </div>
@@ -125,7 +118,7 @@
                     class="fa fa-facebook-square" attr="facebook icon"></a></li>
                <li><a href="https://www.instagram.com/neutec.sk/" target="blank"
                     class="fa fa-instagram"></a></li>
-               <li><a href="#" class="fa fa-google"></a></li>
+               <li><a href="mailto:neutec@gmail.com" class="fa fa-google"></a></li>
           </ul>
      </div>
 
@@ -137,7 +130,7 @@
                     <div class="col-md-6 col-sm-12">
                          <div class="about-info">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
-                                   <h4>About us</h4>
+                                   <h4 id="abouth4"></h4>
                                    <h2 id="abouth2"></h2>
                               </div>
 
@@ -158,7 +151,7 @@
      </section>
 
      <!-- ABOUT -->
-     <section id="problems" data-stellar-background-ratio="0.5">
+     <section id="story" data-stellar-background-ratio="0.5" style="background-color:#f9f9f9;">
           <div class="container">
                <div class="row">
 
@@ -171,7 +164,7 @@
                     <div class="col-md-6 col-sm-12">
                          <div class="about-info">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
-                                   <h4>Read our story</h4>
+                                   <h4 id="storyh4"></h4>
                                    <h2 id="storyup"></h2>
                               </div>
 
@@ -187,7 +180,7 @@
 
 
 
-     <section id="menu" data-stellar-background-ratio="0.5" style="background-position: 0% -487.3px;">
+     <section id="work" data-stellar-background-ratio="0.5">
           <div class="container">
                <div class="row">
 
@@ -202,10 +195,10 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image1.jpg" class="image-popup" title="American Breakfast"></a>
-                              <img src="images/menu-image1.jpg" class="img-responsive" alt="">
+                              <a href="images/grid/item_1.jpg" class="image-popup" title="American Breakfast"></a>
+                              <img src="images/grid/item_1.jpg" class="img-responsive" alt="">
 
-                              <div class="menu-info">
+                              <!-- <div class="menu-info">
                                    <div class="menu-item">
                                         <h3>Projekt o .....</h3>
                                         <p>Krátky popis projektu</p>
@@ -213,7 +206,7 @@
                                    <div class="menu-price">
                                         <span>$30</span>
                                    </div>
-                              </div>
+                              </div> -->
                               </a>
                          </div>
                     </div>
@@ -221,18 +214,8 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image2.jpg" class="image-popup" title="Self-made Salad">
-                                   <img src="images/menu-image2.jpg" class="img-responsive" alt="">
-
-                                   <div class="menu-info">
-                                        <div class="menu-item">
-                                             <h3>Projekt o .....</h3>
-                                             <p>Krátky popis projektu</p>
-                                        </div>
-                                        <div class="menu-price">
-                                             <span>$30</span>
-                                        </div>
-                                   </div>
+                              <a href="images/grid/item_2.jpg" class="image-popup" title="Self-made Salad">
+                                   <img src="images/grid/item_2.jpg" class="img-responsive" alt="">
                               </a>
                          </div>
                     </div>
@@ -240,18 +223,8 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image3.jpg" class="image-popup" title="Chinese Noodle">
-                                   <img src="images/menu-image3.jpg" class="img-responsive" alt="">
-
-                                   <div class="menu-info">
-                                        <div class="menu-item">
-                                             <h3>Projekt o .....</h3>
-                                             <p>Krátky popis projektu</p>
-                                        </div>
-                                        <div class="menu-price">
-                                             <span>$30</span>
-                                        </div>
-                                   </div>
+                              <a href="images/grid/item_3.jpg" class="image-popup" title="Chinese Noodle">
+                                   <img src="images/grid/item_3.jpg" class="img-responsive" alt="">
                               </a>
                          </div>
                     </div>
@@ -259,18 +232,8 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image4.jpg" class="image-popup" title="Rice Soup">
-                                   <img src="images/menu-image4.jpg" class="img-responsive" alt="">
-
-                                   <div class="menu-info">
-                                        <div class="menu-item">
-                                             <h3>Projekt o .....</h3>
-                                             <p>Krátky popis projektu</p>
-                                        </div>
-                                        <div class="menu-price">
-                                             <span>$30</span>
-                                        </div>
-                                   </div>
+                              <a href="images/grid/item_4.jpg" class="image-popup" title="Rice Soup">
+                                   <img src="images/grid/item_4.jpg" class="img-responsive" alt="">
                               </a>
                          </div>
                     </div>
@@ -278,18 +241,8 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image5.jpg" class="image-popup" title="Project title">
-                                   <img src="images/menu-image5.jpg" class="img-responsive" alt="">
-
-                                   <div class="menu-info">
-                                        <div class="menu-item">
-                                             <h3>Projekt o .....</h3>
-                                             <p>Krátky popis projektu</p>
-                                        </div>
-                                        <div class="menu-price">
-                                             <span>$30</span>
-                                        </div>
-                                   </div>
+                              <a href="images/grid/item_5.jpg" class="image-popup" title="Project title">
+                                   <img src="images/grid/item_5.jpg" class="img-responsive" alt="">
                               </a>
                          </div>
                     </div>
@@ -297,18 +250,35 @@
                     <div class="col-md-4 col-sm-6">
                          <!-- MENU THUMB -->
                          <div class="menu-thumb">
-                              <a href="images/menu-image6.jpg" class="image-popup" title="Project title">
-                                   <img src="images/menu-image6.jpg" class="img-responsive" alt="">
+                              <a href="images/grid/item_6.jpg" class="image-popup" title="Project title">
+                                   <img src="images/grid/item_6.jpg" class="img-responsive" alt="">
+                              </a>
+                         </div>
+                    </div>
 
-                                   <div class="menu-info">
-                                        <div class="menu-item">
-                                             <h3>Projekt o .....</h3>
-                                             <p>Krátky popis projektu</p>
-                                        </div>
-                                        <div class="menu-price">
-                                             <span>$30</span>
-                                        </div>
-                                   </div>
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/grid/item_7.jpg" class="image-popup" title="Project title">
+                                   <img src="images/grid/item_7.jpg" class="img-responsive" alt="">
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/grid/item_8.jpg" class="image-popup" title="Project title">
+                                   <img src="images/grid/item_8.jpg" class="img-responsive" alt="">
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="images/grid/item_9.jpg" class="image-popup" title="Project title">
+                                   <img src="images/grid/item_9.jpg" class="img-responsive" alt="">
                               </a>
                          </div>
                     </div>
@@ -319,8 +289,8 @@
      </section>
 
 
-     <!-- TESTIMONIAL -->
-     <section id="testimonial" data-stellar-background-ratio="0.5">
+     <!-- TEAM -->
+     <section id="team" data-stellar-background-ratio="0.5">
           <div class="overlay"></div>
           <div class="container">
                <div class="row" style="top:-10%">
@@ -337,7 +307,7 @@
                                    <img src="images/andrej_hrmo.jpg" class="img-responsive" alt="">
                                    <div class="tst-author">
                                         <h3>Andrej Hrmo</h3>
-                                        <h4><span id="hrmo"></span></h4>
+                                        <h4 id="hrmo"></h4>
                                    </div>
                               </div>
 
@@ -345,7 +315,7 @@
                                    <img src="images/amin_sani.jpg" class="img-responsive" alt="">
                                    <div class="tst-author">
                                         <h3>Amin Sani</h3>
-                                        <h4><span id="sani"></span></h4>
+                                        <h4 id="sani"></h4>
                                    </div>
                               </div>
 
@@ -353,10 +323,18 @@
                                    <img src="images/lisa_husieva.jpg" class="img-responsive" alt="">
                                    <div class="tst-author">
                                         <h3>Yelyzaveta Husieva</h3>
-                                        <h4><span id="lisa"></span></h4>
+                                        <h4 id="lisa"></h4>
                                    </div>
                               </div>
 
+                              <div class="item">
+                                   <img src="images/samuel_knut.jpg" class="img-responsive" alt="">
+                                   <div class="tst-author">
+                                        <h3>Samuel Knut</h3>
+                                        <h4><span id="samo"></span></h4>
+                                   </div>
+                              </div>
+                              
                               <div class="item">
                                    <img src="images/timotej_kopca.jpg" class="img-responsive" alt="">
                                    <div class="tst-author">
@@ -404,7 +382,12 @@
 
                          <div class="col-md-12 col-sm-12">
                               <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
-                                   <h2 id="contactup"></h2>
+                                   
+                                   <div class="row" style="padding-top: 10px;">
+                                        <h2 id="contactup" class="col-md-6 col-sm-12"></h2>
+                                        <h3 style="margin:10px 0px;" class="col-md-1 col-sm-2"><a href="#" class="fa fa-google"></a></h3>
+                                        <h4 class="col-md-5 col-sm-10"><span id="contactdown"></span><a href="mailto:neutec@gmail.com">neutec@gmail.com</a></h4>
+                                   </div>
                               </div>
                          </div>
 
@@ -423,19 +406,16 @@
                                    <input type="text" class="form-control" id="cf-name" name="name"
                                         placeholder="Full name">
                               </div>
-
                               <div class="col-md-6 col-sm-6">
                                    <input type="email" class="form-control" id="cf-email" name="email"
                                         placeholder="Email address">
                               </div>
-
                               <div class="col-md-12 col-sm-12">
                                    <input type="text" class="form-control" id="cf-subject" name="subject"
                                         placeholder="Subject">
 
                                    <textarea class="form-control" rows="6" id="cf-message" name="message"
                                         placeholder="Tell us about your project"></textarea>
-
                                    <button type="submit" class="form-control" id="cf-submit" name="submit"></button>
                               </div>
                          </form>
@@ -502,18 +482,19 @@
                </div>
           </div>
      </footer> -->
+     
 
-     <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s">
+     <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s" style="background-color: #f9f9f9;">
           <div class="col-12" style="text-align: center;">
                <p><br>Copyright &copy; 2020
-               <br>Design: Jakub Patrik</a></p>
-          
+               <br>Design: Jakub Patrik<br><br><br></a></p>
           </div>
      </div>
 
 
      <!-- SCRIPTS -->
 
+     
      <script src="js/text.js"></script>
      <script src="js/jquery.js"></script>
      <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -31,17 +31,33 @@
       else {
         $('.social-icon').css("visibility", "hidden");
       }  
-    });     
+    });
+    
+
+    $(document).scroll(function () {
+      var scroll = $(document).scrollTop();
+      $('section').each(function () {
+        let sec = '#nav'+$(this).attr('id');   
+
+        if(Math.abs(scroll - $(this).position().top > 0.1 ) && ($(this).position().top + $(this).outerHeight() - 20) > scroll ) { 
+          $(sec).css("color", "red");
+        }
+        else {
+          $(sec).css("color", "#575757");
+        }
+      });
+    });
 
 
 
     // SLIDER
     $('#down').owlCarousel({
       animateOut: 'fadeOut',
-      loop:true,
+      loop:false,
       autoplayHoverPause: false,
       autoplay: true,
       smartSpeed: 1000,
+      rewind: true,
       responsive:{
         0:{
             items:1
@@ -61,6 +77,7 @@
       loop:false,
       autoplayHoverPause: false,
       autoplay: true,
+      rewind: true,
       smartSpeed: 1000,
       items:1,
     })
@@ -97,7 +114,7 @@
     });  
 
 
-/*
+
     // CONTACT FORM
     $("#contact-form").submit(function (e) {
       e.preventDefault();
@@ -114,7 +131,7 @@
       if (isValidEmail(email) && (message.length > 1) && (name.length > 1)) {
           $.ajax({
               type: "POST",
-              url: "email.php",
+              url: "contact.php",
               data: dataString,
               success: function () {
                   $('.text-success').fadeIn(1000);
@@ -129,7 +146,7 @@
       return false;
     });
 
-*/
+
 
 
     // SMOOTHSCROLL
@@ -137,7 +154,7 @@
       $('.custom-navbar a, #home a').on('click', function(event) {
         var $anchor = $(this);
           $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
+            scrollTop: $($anchor.attr('href')).offset().top + 9
           }, 1000);
             event.preventDefault();
       });
