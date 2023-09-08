@@ -90,6 +90,10 @@ function setLanguage(lang) {
     this.lan = lang;
     lan == "en" ? locale = en : locale = sk; 
     for (var key in locale) {
-        document.getElementById(key).innerHTML = locale[key];
+        try{
+            document.getElementById(key).innerHTML = locale[key];
+        }catch(e){
+            console.log(e)
+        }
     }
 }

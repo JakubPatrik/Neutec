@@ -132,6 +132,19 @@
   }
 
 
+  .partners {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: lightgrey;
+    padding: 50px 10%;
+  }
+
+  .partners img {
+    max-width: 300px;
+    max-height: 100px;
+  }
+
 
   /*---------------------------------------
      BUTTONS               
